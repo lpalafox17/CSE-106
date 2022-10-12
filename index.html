@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gradebook</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+     <var url = "https://amhep.pythonanywhere.com";>
+
+     </var>
+</head>
+<body>
+    
+    <div class="get">
+        <div class="get_grade">
+            <h2>Get Grade</h2>
+            <label for="name">Student Name: </label>
+            <input type="text" id="name" />
+            <button type="submit" onclick="get()">Find Grade!</button>
+            <br><br>
+            <input type="text" id="get_grade" placeholder="Your Grade" readonly />
+            <p> <a href="records.html">SEE ALL RECRODS</a></p>
+       
+        </div>
+
+       
+
+    <div class="add">
+        <div class="add_student">
+            <h2>Add Student Record</h2>
+            <label for="name2">Student Name: </label>
+            <input type="text" id="addname" />
+            <br><br>
+            <label for="grade2">Grade: </label>
+            <input type="text" id="addgrade" />
+            <br><br>
+            <button type="submit" onclick="add()">Add Grade!</button>
+            <p> <a href="records.html">SEE ALL GRADES </a></p>
+            <p id="successrecord"></p>
+        </div>
+
+        <div class="edit">
+            <h2>Edit Student Grade</h2>
+            <label for="editname">Student Name: </label>
+            <input type="text" id="editname" />
+            <br><br>
+            <label for="editgrade">New Grade: </label>
+            <input type="text" id="editgrade" />
+            <br><br>
+            <button type="submit" onclick="edit()">Edit Grade!</button>
+            <p> <a href="records.html">SEE ALL GRADES </a></p>
+            <p id="successgrade"></p>
+        </div>
+    </div>
+
+    <div class="delete">
+        <div>
+            <h2>Delete Student Grade</h2>
+            <label for="deletename">Student Name: </label>
+            <input type="text" id="deletename" />
+            <br><br>
+            <button type="submit" onclick="del()">Delete!</button>
+            <p> <a href="records.html">SEE ALL GRADES </a></p>
+            <p id="successdelete"></p>
+        </div>
+    </div>
+</body>
+</html>
